@@ -18,11 +18,15 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-20 lg:px-8 lg:py-32 w-full">
         <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 rounded-full bg-primary/20 px-4 py-1.5 mb-6 border border-primary/30">
-            <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary-foreground/90">
-              Excelência em gestão de saúde
-            </span>
+          <div className="mb-8">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-06%20at%2022.12.15-Rnd2NvK4F7iCU7zPw5C402PNYExBSb.jpeg"
+              alt="MegaMed - Saúde é Nosso Compromisso"
+              width={400}
+              height={120}
+              className="object-contain rounded-lg bg-white/95 p-4 shadow-lg"
+              priority
+            />
           </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl leading-tight text-balance">

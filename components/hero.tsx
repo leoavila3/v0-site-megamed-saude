@@ -7,27 +7,16 @@ export function Hero() {
     <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-medical.jpg"
-          alt=""
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-06%20at%2022.12.15-Rnd2NvK4F7iCU7zPw5C402PNYExBSb.jpeg"
+          alt="MegaMed - Saúde é Nosso Compromisso"
           fill
-          className="object-cover"
+          className="object-contain bg-[#f5f5f5]"
           priority
         />
-        <div className="absolute inset-0 bg-[#1a2e44]/75" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-20 lg:px-8 lg:py-32 w-full">
         <div className="max-w-2xl">
-          <div className="mb-8">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-06%20at%2022.12.15-Rnd2NvK4F7iCU7zPw5C402PNYExBSb.jpeg"
-              alt="MegaMed - Saúde é Nosso Compromisso"
-              width={400}
-              height={120}
-              className="object-contain rounded-lg bg-white/95 p-4 shadow-lg"
-              priority
-            />
-          </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl leading-tight text-balance">
             Saúde é Nosso{" "}

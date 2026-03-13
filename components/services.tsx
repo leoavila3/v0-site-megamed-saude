@@ -37,20 +37,9 @@ const services = [
     icon: Building2,
     title: "Gestão Hospitalar",
     description:
-      "Apoio técnico à gestão hospitalar e ambulatorial com foco em resultados.",
+      "Apoio técnico à gestão hospitalar, planejamento e dimensionamento de recursos humanos em saúde.",
   },
-  {
-    icon: HeartPulse,
-    title: "Urgência e Emergência",
-    description:
-      "Cobertura assistencial em unidades de urgência, emergência e enfermarias.",
-  },
-  {
-    icon: CalendarClock,
-    title: "Planejamento de RH",
-    description:
-      "Planejamento e dimensionamento de recursos humanos em saúde.",
-  },
+  
 ]
 
 export function Services() {
@@ -66,7 +55,7 @@ export function Services() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             Oferecemos serviços voltados ao suporte assistencial e à gestão
-            técnica de serviços de saúde com excelência.
+            técnica de serviços a saúde com excelência.
           </p>
         </div>
 

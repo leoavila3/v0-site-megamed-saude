@@ -10,24 +10,25 @@ const navItems = [
   { label: "Serviços", href: "#servicos" },
   { label: "Missão", href: "#missao" },
   { label: "Diferenciais", href: "#diferenciais" },
-  { label: "Contato", href: "#contato" },
+  
 ]
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
-      <div className="mx-auto max-w-7xl flex items-center justify-between px-4 py-3 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
+      <div className="mx-auto max-w-7xl flex items-center justify-between px-4 py-5 lg:px-12">
+        <Link href="/logo" className="flex items-center gap-3">
+
           <Image
-            src="/images/logo.jpeg"
-            alt="MegaMed Saude"
-            width={180}
-            height={50}
-            className="h-10 w-auto"
-            priority
-          />
+  src="/images/logo.jpeg"
+  alt="MegaMed Saude"
+  width={1200}
+  height={800}
+  className="h-24 w-auto -my-4 transition-transform duration-300 hover:scale-110"
+  priority
+/>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Navegação principal">

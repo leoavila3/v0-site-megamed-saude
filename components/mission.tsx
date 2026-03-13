@@ -11,7 +11,7 @@ const cards = [
     icon: Eye,
     title: "Visão",
     description:
-      "Ser referência em gestão e prestação de serviços assistenciais, reconhecida pela excelência técnica e confiabilidade institucional.",
+      "Ser referência de gestão em saúde, reconhecida pela excelência técnica e confiabilidade institucional.",
   },
   {
     icon: Heart,

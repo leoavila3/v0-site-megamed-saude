@@ -16,7 +16,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Protocolos Assistenciais",
-    description: "Padronização de processos para segurança do paciente.",
+    description: "Padronizados pelas diretrizes do ministério da saúde.",
   },
   {
     icon: RefreshCw,

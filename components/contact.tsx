@@ -63,13 +63,16 @@ export function Contact() {
             <h3 className="text-xl font-bold text-foreground mb-6">
               Envie sua mensagem
             </h3>
-            <form className="space-y-5">
+            <form action="https://formsubmit.co/megamed2025@gmail.com" method="POST" className="space-y-5">
+            <input type="hidden" name="_next" value="http://localhost:3000/sucesso" />
+<input type="hidden" name="_captcha" value="false" />
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
                   Nome completo
                 </label>
                 <input
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Seu nome"
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
@@ -81,6 +84,7 @@ export function Contact() {
                 </label>
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="seu@email.com"
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
@@ -92,6 +96,7 @@ export function Contact() {
                 </label>
                 <input
                   id="subject"
+                  name="subject"
                   type="text"
                   placeholder="Assunto da mensagem"
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
@@ -103,6 +108,7 @@ export function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   placeholder="Descreva o que precisa..."
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none"

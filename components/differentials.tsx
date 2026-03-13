@@ -11,13 +11,9 @@ const differentials = [
   {
     icon: Award,
     title: "Profissionais Experientes",
-    description: "Gestão técnica liderada por profissionais com vasta experiência.",
+    description: "Gestão técnica liderada por profissionais de alta capacidade.",
   },
-  {
-    icon: Building,
-    title: "Estrutura para Contratos Públicos",
-    description: "Estrutura organizacional voltada para contratos públicos e hospitalares.",
-  },
+  
   {
     icon: Zap,
     title: "Mobilização Rápida",

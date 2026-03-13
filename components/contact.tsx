@@ -64,7 +64,7 @@ export function Contact() {
               Envie sua mensagem
             </h3>
             <form action="https://formsubmit.co/megamed2025@gmail.com" method="POST" className="space-y-5">
-            <input type="hidden" name="_next" value="http://localhost:3000/sucesso" />
+            <input type="hidden" name="_next" value="http://megamedsaude.com/sucesso" />
 <input type="hidden" name="_captcha" value="false" />
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">

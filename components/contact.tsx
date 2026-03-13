@@ -63,20 +63,28 @@ export function Contact() {
             <h3 className="text-xl font-bold text-foreground mb-6">
               Envie sua mensagem
             </h3>
-            <form action="https://formsubmit.co/megamed2025@gmail.com" method="POST" className="space-y-5">
-            <input type="hidden" name="_next" value="http://megamedsaude.com/sucesso" />
-<input type="hidden" name="_captcha" value="false" />
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
-                  Nome completo
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Seu nome"
-                  className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
-                />
+           <form action="https://formsubmit.co/megamed2025@gmail.com" method="POST" className="space-y-5">
+
+  <input type="hidden" name="_next" value="https://megamedsaude.com/" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_subject" value="Novo contato pelo site MegaMed" />
+  <input type="text" name="_honey" style={{ display: "none" }} />
+
+  <div>
+    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
+      Nome completo
+    </label>
+
+    <input
+      id="name"
+      name="name"
+      type="text"
+      required
+      placeholder="Seu nome"
+      className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm"
+    />
+  </div>
+
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">

@@ -1,4 +1,4 @@
-import { Mail, MapPin, Building2, Briefcase } from "lucide-react"
+import { Mail, Building2, Briefcase } from "lucide-react"
 import Link from "next/link"
 
 export function Contact() {
@@ -6,6 +6,8 @@ export function Contact() {
     <section id="contato" className="py-20 lg:py-28 bg-background">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          
+          {/* COLUNA ESQUERDA: INFORMAÇÕES */}
           <div>
             <span className="text-sm font-semibold uppercase tracking-widest text-primary">
               Contato
@@ -20,6 +22,7 @@ export function Contact() {
             </p>
 
             <div className="mt-10 space-y-6">
+              {/* Empresa */}
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                   <Building2 className="h-5 w-5 text-primary" />
@@ -30,6 +33,7 @@ export function Contact() {
                 </div>
               </div>
 
+              {/* Área de Atuação */}
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                   <Briefcase className="h-5 w-5 text-primary" />
@@ -42,6 +46,7 @@ export function Contact() {
                 </div>
               </div>
 
+              {/* E-mail */}
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                   <Mail className="h-5 w-5 text-primary" />
@@ -59,33 +64,37 @@ export function Contact() {
             </div>
           </div>
 
+          {/* COLUNA DIREITA: FORMULÁRIO */}
           <div className="bg-card rounded-2xl border border-border p-8 lg:p-10">
             <h3 className="text-xl font-bold text-foreground mb-6">
               Envie sua mensagem
             </h3>
-           <form action="https://formsubmit.co/megamed2025@gmail.com" method="POST" className="space-y-5">
+            
+            <form 
+              action="https://formsubmit.co/megamed2025@gmail.com" 
+              method="POST" 
+              className="space-y-5"
+            >
+              {/* Configurações FormSubmit */}
+              <input type="hidden" name="_next" value="https://megamedsaude.com/" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="Novo contato pelo site MegaMed" />
+              <input type="text" name="_honey" style={{ display: "none" }} />
 
-  <input type="hidden" name="_next" value="https://megamedsaude.com/" />
-  <input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_subject" value="Novo contato pelo site MegaMed" />
-  <input type="text" name="_honey" style={{ display: "none" }} />
-
-  <div>
-    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
-      Nome completo
-    </label>
-
-    <input
-      id="name"
-      name="name"
-      type="text"
-      required
-      placeholder="Seu nome"
-      className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm"
-    />
-  </div>
-
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
+                  Nome completo
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Seu nome"
+                  className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                />
               </div>
+
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
                   E-mail
@@ -94,10 +103,12 @@ export function Contact() {
                   id="email"
                   name="email"
                   type="email"
+                  required
                   placeholder="seu@email.com"
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                 />
               </div>
+
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-1.5">
                   Assunto
@@ -110,6 +121,7 @@ export function Contact() {
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                 />
               </div>
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
                   Mensagem
@@ -122,6 +134,7 @@ export function Contact() {
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none"
                 />
               </div>
+
               <button
                 type="submit"
                 className="w-full bg-primary text-primary-foreground px-6 py-3.5 rounded-lg text-sm font-semibold hover:bg-accent transition-colors"
@@ -130,6 +143,7 @@ export function Contact() {
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, DM_Sans } from 'next/font/google'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="scroll-smooth">
       <body className={`${inter.variable} ${dmSans.variable} font-sans antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
